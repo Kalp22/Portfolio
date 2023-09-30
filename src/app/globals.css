@@ -13,6 +13,8 @@ body {
     background-color: var(--bgcolor1);
     scroll-behavior: smooth;
     font-family: 'Hind', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 .unselectable {
