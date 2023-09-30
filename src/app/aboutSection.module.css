@@ -1,0 +1,32 @@
+.aboutParent{
+    /* transform: translateY(50%); */
+    color: white;
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--defaultPadding);
+    
+}
+
+.aboutSection{
+    background: var(--bgcolor1);
+    background: var(--bggradient);
+    background-clip: text;
+    color: #35bcbf;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutContext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    padding: 20px 30px;
+    border: #91c6c6 solid 1px;
+    border-radius: 20px;
+    background-color: #41506b;
+}
