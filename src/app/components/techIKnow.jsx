@@ -1,4 +1,4 @@
-import styles from '../techIKnow.module.css'
+import styles from '../styles/techIKnow.module.css'
 
 import { FaHtml5 } from "react-icons/fa"
 import { FaCss3Alt } from "react-icons/fa"
@@ -16,12 +16,12 @@ export default function Technologies() {
     return (
         <div className={styles.techParent}>
             <div
-                className={[styles.techSection, "unselectable", "title"].join(" ")}
+                className={["unselectable", "title"].join(" ")}
             >
                 Technologies I Learned
             </div>
             <div
-                className={styles.techSection}
+                className={styles.techLogos}
             >
                 <div className={styles.logos}>
                     <FaHtml5 className={styles.logoIcons} size={'70px'} />
@@ -29,7 +29,7 @@ export default function Technologies() {
                 </div>
 
                 <div className={styles.logos}>
-                    <img src="./C.svg" className={styles.logoIcons} />
+                    <img src="../C.svg" className={styles.logoIcons} />
                     C
                 </div>
 
@@ -69,7 +69,7 @@ export default function Technologies() {
                 </div>
 
                 <div className={styles.logos}>
-                    <img src="./C++.svg" className={styles.logoIcons} />
+                    <img src="../C++.svg" className={styles.logoIcons} />
                     C++
                 </div>
 

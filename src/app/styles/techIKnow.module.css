@@ -1,0 +1,148 @@
+.techParent{
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: var(--defaultPadding);
+    padding-top: 150px;
+    padding-bottom: 150px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bgcolor1);
+    background: var(--bggradient);
+}
+
+.techLogos{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 50px 100px;
+    font-family: 'JetBrains Mono', monospace;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoIcons{
+    color: black;
+    margin-bottom: 10px;
+    height: 70px;
+    width: 70px;
+}
+
+
+@media (width <=1600px) {
+    .techLogos {
+        gap: 50px;
+    }
+}
+
+@media (width <=1400px) {
+    .techParent {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (width <=1250px) {
+    .techLogos {
+        grid-template-columns: repeat(5, 1fr);
+        font-size: 18px;
+        gap: 30px;
+    }
+
+    .techParent {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .logoIcons {
+        height: 60px;
+        width: 60px;
+        size: 60px;
+    }
+}
+
+
+
+@media (width <=800px) {
+    .techLogos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .techParent {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+@media (width <=650px) {
+    .techLogos {
+        font-size: 18px;
+        gap: 20px;
+    }
+
+    .logoIcons {
+        height: 50px;
+        width: 50px;
+        size: 50px;
+    }
+}
+
+@media (width <=590px) {
+    .techLogos {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 17px;
+        gap: 20px;
+    }
+}
+
+@media (width <=500px) {
+    .techLogos {
+        font-size: 13px;
+        gap: 18px;
+    }
+
+    .logoIcons {
+        height: 40px;
+        width: 40px;
+        size: 40px;
+    }
+}
+
+@media (width <=350px) {
+    .techLogos {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 12px;
+        gap: 16px;
+    }
+
+    .logoIcons {
+        height: 35px;
+        width: 35px;
+        size: 35px;
+    }
+}
+
+@media (height <=900px) and (orientation: landscape) {
+    .techParent {
+        margin-top: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (height <=950px) and (orientation: portrait) {
+    .techParent {
+        margin-top: 150px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

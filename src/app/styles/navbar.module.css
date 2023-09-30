@@ -1,0 +1,66 @@
+.navbar{
+    height: 40px;
+    background-color: #b2cccc;
+    padding: 10px 1.5%;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    box-shadow: 0px 10px 50px 0px #b2cccc35;
+}
+
+.kalpeshLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 170px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+@media (width <=590px) {
+    .navbar {
+        height: 30px;
+    }
+
+    .kalpeshLogo {
+        width: 110px;
+        font-size: 20px;
+    }
+}
+
+@media (width <=500px) {
+    .navbar {
+        height: 25px;
+    }
+
+    .kalpeshLogo {
+        width: 90px;
+        font-size: 17px;
+    }
+}
+
+@media (width <=350px) {
+    .navbar {
+        height: 15px;
+    }
+
+    .kalpeshLogo {
+        width: 70px;
+        font-size: 14px;
+    }
+}
+
+@media (height <=900px) and (orientation: landscape) {
+    .navbar {
+        height: 20px;
+    }
+}
+
+@media (height <=950px) and (orientation: portrait) {
+    .navbar {
+        height: 20px;
+    }
+}

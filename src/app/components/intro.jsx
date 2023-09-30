@@ -1,4 +1,4 @@
-import styles from '../intro.module.css'
+import styles from '../styles/intro.module.css'
 
 export default function Intro() {
 

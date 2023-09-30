@@ -27,3 +27,56 @@ body {
     margin-left: 20px;
 
 }
+
+
+@media (width <=1600px) {
+    :root {
+        --defaultPadding: 0px 200px;
+    }
+}
+
+@media (width <=1400px) {
+    :root {
+        --defaultPadding: 0px 100px;
+    }
+}
+
+@media (width <= 1000px) {
+    :root {
+        --defaultPadding: 0px 50px;
+    }
+}
+
+@media (width <=650px) {
+    :root {
+        --defaultPadding: 0px 30px;
+    }
+
+    .title {
+        font-size: 40px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media (width <=590px) {
+    .title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (width <=500px) {
+    .title {
+        font-size: 26px;
+    }
+}
+
+@media (width <=350px) {
+    .title {
+        font-size: 30px;
+        margin-bottom: 3px;
+        margin-left: 3px;
+    }
+}
