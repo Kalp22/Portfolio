@@ -1,4 +1,5 @@
 import styles from '../styles/techIKnow.module.css'
+import Image from 'next/image'
 
 import { FaHtml5 } from "react-icons/fa"
 import { FaCss3Alt } from "react-icons/fa"
@@ -29,7 +30,8 @@ export default function Technologies() {
                 </div>
 
                 <div className={styles.logos}>
-                    <img src="../C.svg" className={styles.logoIcons} />
+                    {/* <img src="../C.svg" className={styles.logoIcons} /> */}
+                    <Image src={"C.svg"} alt='C' width={'70'} height={'70'}/>
                     C
                 </div>
 
@@ -69,7 +71,7 @@ export default function Technologies() {
                 </div>
 
                 <div className={styles.logos}>
-                    <img src="../C++.svg" className={styles.logoIcons} />
+                    <Image src={"C++.svg"} alt='C' width={'70'} height={'70'}/>
                     C++
                 </div>
 
