@@ -9,6 +9,10 @@
     font-size: larger;
 }
 
+.footHeadings{
+    text-decoration: underline;
+}
+
 .createBy,.createUsing,.socialParent{
     display: flex;
     flex-direction: column;
@@ -18,6 +22,7 @@
 .socialSites{
     display: flex;
     justify-content: space-around;
+    color: black !important;
 }
 
 .siteIcons{
@@ -28,4 +33,12 @@
     font-family: 'Space Mono', monospace;
     font-weight: bold;
     margin: 5px 0px;
+}
+
+
+@media (width <= 500px) {
+    .footerParent{
+        flex-direction: column;
+        gap: 10px;
+    }
 }

@@ -31,7 +31,7 @@ export default function Technologies() {
 
                 <div className={styles.logos}>
                     {/* <img src="../C.svg" className={styles.logoIcons} /> */}
-                    <Image src={"C.svg"} alt='C' width={'70'} height={'70'}/>
+                    <Image src={"C.svg"} alt='C' className={styles.logoIcons} width={'70'} height={'70'}/>
                     C
                 </div>
 
@@ -71,7 +71,7 @@ export default function Technologies() {
                 </div>
 
                 <div className={styles.logos}>
-                    <Image src={"C++.svg"} alt='C' width={'70'} height={'70'}/>
+                    <Image src={"C++.svg"} alt='C++' className={styles.logoIcons} width={'70'} height={'70'}/>
                     C++
                 </div>
 
@@ -85,9 +85,6 @@ export default function Technologies() {
                     React
                 </div>
                 
-                {/* <div className="logos"><BsArrowRight size={'60px'}/></div>
-                <div className="logos">SomeLogoLeft</div>
-                <div className="logos"><BsArrowRight size={'60px'}/></div> */}
             </div>
         </div>
     )

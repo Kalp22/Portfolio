@@ -12,17 +12,17 @@ export default function Footer() {
     return(
         <div className={styles.footerParent}>
             <div className={styles.createBy}>
-                <span>Created By</span>
-                <span className={styles.myName}>Kalpesh</span>
+                <span className={styles.footHeadings}>Created By</span>
+                <span className={[styles.myName, 'unselectable'].join(' ')}>Kalpesh</span>
             </div>
             <div className={styles.createUsing}>
-                <span>Created using</span>
+                <span className={styles.footHeadings}>Created using</span>
                 <a href='https://nextjs.org/' target='_blank'>
                     <TbBrandNextjs size={'45px'} />
                 </a>
             </div>
             <div className={styles.socialParent}>
-                <span>Social Media</span>
+                <span className={styles.footHeadings}>Social Media</span>
                 <div className={styles.socialSites}>
 
                     <a href='mailto:kalpesh22nimje@gmail.com' target='_blank' className={styles.siteIcons}>
@@ -33,7 +33,7 @@ export default function Footer() {
                         <FaSquareGithub size={'35px'} />
                     </a>
 
-                    <a href='https://www.linkedin.com/in/kalpesh-nimje-305862234/' target='_blank' className={styles.siteIcons}>
+                    <a href='https://www.linkedin.com/in/kalpesh-nimje-305862234' target='_blank' className={styles.siteIcons}>
                         <FaLinkedin size={'35px'} />
                     </a>
 
