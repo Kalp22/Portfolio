@@ -1,0 +1,24 @@
+/* .projectParent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--defaultPadding);
+    padding-top: 150px;
+    padding-bottom: 150px;  
+    flex-direction: column;
+    align-items: center;
+    background: var(--bgcolor2);
+    background: var(--bggradient2);
+}
+
+.projectsCover{
+
+}
+
+.theProjects{
+    display: flex;
+    background-color: aliceblue;
+    margin: 10px;
+    
+
+} */

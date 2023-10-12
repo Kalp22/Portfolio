@@ -11,6 +11,8 @@ import { IoLogoJavascript } from "react-icons/io5"
 import { SiMongodb } from "react-icons/si"
 import { BsGithub } from "react-icons/bs"
 import { BiLogoPostgresql } from "react-icons/bi"
+import { TbBrandNextjs } from 'react-icons/tb'
+import { BiLogoTailwindCss } from 'react-icons/bi'
 
 export default function Technologies() {
 
@@ -82,7 +84,15 @@ export default function Technologies() {
                 
                 <div className={styles.logos}>
                     <FaReact className={styles.logoIcons} size={'70px'} />
-                    React
+                    Reactjs
+                </div>
+                <div className={styles.logos}>
+                    <TbBrandNextjs className={styles.logoIcons} size={'70px'} />
+                    Nextjs
+                </div>
+                <div className={styles.logos}>
+                    <BiLogoTailwindCss className={styles.logoIcons} size={'70px'} />
+                    Tailwind CSS
                 </div>
                 
             </div>
