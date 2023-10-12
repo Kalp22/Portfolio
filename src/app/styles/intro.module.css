@@ -221,15 +221,15 @@
     .hi {
         font-size: 40px;
     }
-
+    
     .iAmK {
         font-size: 35px;
     }
-
+    
     .myTags {
         font-size: 12px;
     }
-
+    
     .tags {
         margin-right: 3px;
     }
@@ -243,7 +243,8 @@
 
 @media (height <=950px) and (orientation: portrait) {
     .intro {
-        margin-top: 100px;
+        margin-top: 250px;
+        margin-bottom: 450px;
     }
 
 }

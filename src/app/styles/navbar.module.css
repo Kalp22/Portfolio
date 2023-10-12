@@ -55,12 +55,20 @@
 
 @media (height <=900px) and (orientation: landscape) {
     .navbar {
-        height: 20px;
+        height: 40px;
+    }
+    .kalpeshLogo {
+        width: 110px;
+        font-size: 17px;
     }
 }
 
 @media (height <=950px) and (orientation: portrait) {
     .navbar {
-        height: 20px;
+        height: 40px;
+    }
+    .kalpeshLogo {
+        width: 110px;
+        font-size: 17px;
     }
 }
