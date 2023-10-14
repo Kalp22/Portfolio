@@ -1,9 +1,9 @@
 .projectParent{
+    padding-top: 150px;
+    padding-bottom: 150px;  
     display: flex;
     align-items: stretch;
     padding: var(--defaultPadding);
-    padding-top: 150px;
-    padding-bottom: 150px;  
     flex-direction: column;
     background: var(--bgcolor2);
     background: var(--bggradient2);
@@ -18,12 +18,15 @@
 
 .projectTitle{
     color: #e2ffff;
+    font-size: 30px;
 }
 
 .theProjects{
     background-color: #41506b;
     margin: 10px;
     padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .projectHeads{
@@ -43,27 +46,31 @@
     margin-right: 130px;
 }
 
-.projectHeads span{
-    font-size: 30px;
+.linksWrapper{
+    display: flex;
+}
+
+.pLink{
+    margin: 0px 30px;
+    background-color: #b2cccc;
+    border-radius: 10px;
+    transition-duration: 100ms;
+    padding: 15px;
+    text-align: center;
 }
 
 .sourceLink,.viewLink{
-    margin: 0px 30px;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #b2cccc;
     text-decoration: none;
     outline: none;
     color: black;
-    transition-duration: 100ms;
 }
 
-.viewLink:hover{
+.pLink:nth-child(2):hover{
     border-radius: 5px;
     background-color: #35bcbf;
 }
 
-.sourceLink:hover{
+.pLink:nth-child(1):hover{
     border-radius: 15px;
     background-color: #35bdbf43;
 }
@@ -71,4 +78,118 @@
 .projectDescription{
     padding: 25px;
     color: #c4d7d7;
+}
+
+.projectDescript{
+    display: none;
+}
+
+@media (width <= 1200px) {
+    .pLink{
+        margin: 0px 10px;
+        padding: 10px 12px;
+    }
+    .theProjects:nth-child(odd){
+        margin-left: 90px;
+    }
+    .theProjects:nth-child(even){
+        margin-right: 90px;
+    }
+}
+
+@media (width <=1000px) {
+    .theProjects:nth-child(odd){
+        margin-left: 50px;
+    }
+    .theProjects:nth-child(even){
+        margin-right: 50px;
+    }
+    .projectTitle{
+        font-size: 25px;
+    }
+    .theProjects{
+        margin-top: 5px;
+        padding: 20px 10px;
+    }
+    .projectDescription{
+        padding: 20px;
+    }
+}
+
+@media (width <= 750px) {
+    .pLink{
+        margin: 0px 5px;
+        padding: 7px 10px;
+        font-size: 15px;
+    }
+    .projectDescription{
+        font-size: 15px;
+        align-self: center;
+        padding: 15px;
+    }
+    .projectHeads{
+        margin-bottom: 10px;
+        padding: 10px 12px;
+    }
+}
+
+@media (width <= 650px) {
+    .projectParent{
+        padding-top: 100px;
+        padding-bottom: 100px;  
+    }
+    .projectDescription{
+        display: none;
+    }
+    .projectDescript{
+        display: block;
+        font-size: 16px;
+        margin-top: 35px;
+        text-align: center;
+    }
+    .projectHeads{
+        flex-direction: column;
+    }
+    .projectTitle{
+        font-size: 30px;
+    }
+    .pLink{
+        margin: 30px 10px 0px 10px;
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    .theProjects{
+        margin-top: 50px;
+        padding: 20px 10px;
+    }
+    .theProjects:nth-child(odd){
+        margin-left: 20px;
+    }
+    .theProjects:nth-child(even){
+        margin-right: 20px;
+    }
+}
+
+@media (width <= 590px) {
+    .projectParent{
+        padding-top: 50px;
+        padding-bottom: 50px;  
+    }
+    .projectTitle{
+        font-size: 25px;
+    }
+    .projectDescript{
+        font-size: 15px;
+        /* margin-top: 10px; */
+    }
+    .theProjects{
+
+        padding: 10px 5px;
+    }
+    .theProjects:nth-child(odd){
+        margin-left: 0px;
+    }
+    .theProjects:nth-child(even){
+        margin-right: 0px;
+    }
 }
