@@ -21,7 +21,7 @@ export default function Technologies() {
             <div
                 className={["unselectable", "title"].join(" ")}
             >
-                Technologies I Learned
+                My Skills
             </div>
             <div
                 className={styles.techLogos}
