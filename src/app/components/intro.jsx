@@ -54,6 +54,7 @@ export default function Intro() {
                     tags && tags.map((data, i) =>
                         <div
                             className={styles.tags}
+                            key={i}
                         > {data.tag} {
                                 tags.length != i + 1 ? ("|") : ("")
                             }

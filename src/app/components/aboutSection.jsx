@@ -54,7 +54,7 @@ export default function About() {
             >
                 {
                     about && about.map((data, i) => 
-                        <p>{data.p}</p>
+                        <p key={i}>{data.p}</p>
                     )
                 }
             </div>

@@ -52,7 +52,7 @@ export default function Projects() {
                 {
                     project &&
                     project.map((data,i) => 
-                        <ProjectCard pData={data}/>
+                        <ProjectCard pData={data} key={i}/>
                     )
                 }
             </div>
