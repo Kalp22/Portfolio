@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import styles from "../styles/aboutSection.module.css";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function About() {
   const [about, setAbout] = React.useState([]);
@@ -49,6 +50,7 @@ export default function About() {
       <div className={styles.aboutContext}>
         {about && about.map((data, i) => <p key={i}>{data.p}</p>)}
       </div>
+      <ToastContainer />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import styles from "../styles/intro.module.css";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Intro() {
   const [tags, setTags] = React.useState([]);
@@ -54,6 +56,7 @@ export default function Intro() {
             </div>
           ))}
       </div>
+      <ToastContainer />
     </div>
   );
 }

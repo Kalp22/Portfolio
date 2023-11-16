@@ -2,7 +2,8 @@
 import { useEffect } from 'react'
 import React from 'react'
 import styles from '../styles/projects.module.css'
-import { toast } from "react-toastify"
+import { toast, ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 import ProjectCard from './projectCard'
 
@@ -56,6 +57,7 @@ export default function Projects() {
                     )
                 }
             </div>
+            <ToastContainer />
         </div>
     )
 }
