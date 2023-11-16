@@ -1,6 +1,41 @@
+"use client"
+import React, { useEffect } from 'react'
 import styles from '../styles/intro.module.css'
 
 export default function Intro() {
+    const [tags, setTags] = React.useState([])
+
+    useEffect(() => {
+        const getData = async () => {
+            fetch("http://localhost:3500/", {
+                method: "GET"
+            }).then((res) => res.json())
+                .then((data) => {
+                    if (data.status) {
+                        setTags(data.tags)
+                    } else {
+                        toast.error("Error in fetching data", {
+                            position: "top-center",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                        })
+                    }
+                }).catch((err) => {
+                    toast.error("Server Error", {
+                        position: "top-center",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                    })
+                })
+        }
+        getData()
+    }, [])
 
     return (
         <div className={styles.intro}>
@@ -15,24 +50,17 @@ export default function Intro() {
                 I am Kalpesh Nimje
             </div>
             <div className={[styles.myTags, "unselectable"].join(' ')}>
-                <div
-                    className={styles.tags}
-                > Student |
-                </div><div
-                    className={styles.tags}
-                >
-                    Engineer |
-                </div>
-                <div
-                    className={styles.tags}
-                >
-                    Web Developer |
-                </div>
-                <div
-                    className={styles.tags}
-                >
-                    Programmer
-                </div>
+                {
+                    tags && tags.map((data, i) =>
+                        <div
+                            className={styles.tags}
+                        > {data.tag} {
+                                tags.length != i + 1 ? ("|") : ("")
+                            }
+                        </div>
+
+                    )
+                }
             </div>
         </div>
     )
