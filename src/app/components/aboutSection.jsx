@@ -8,7 +8,7 @@ export default function About() {
 
     useEffect(() => {
         const getData = async () => {
-            fetch("http://localhost:3500/", {
+            fetch("https://kalpesh-portfolio-backend.vercel.app/", {
                 method: "GET"
             }).then((res) => res.json())
                 .then((data) => {
