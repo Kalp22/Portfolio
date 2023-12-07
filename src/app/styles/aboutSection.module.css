@@ -1,73 +1,71 @@
-.aboutParent{
-    /* transform: translateY(50%); */
-    color: white;
-    margin-top: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--defaultPadding);
-    
+.aboutParent {
+  /* transform: translateY(50%); */
+  color: white;
+  margin-top: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--defaultPadding);
 }
 
-.aboutSection{
-    background: var(--bgcolor1);
-    background: var(--bggradient);
-    background-clip: text;
-    color: #35bcbf;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.aboutSection {
+  background: var(--bgcolor1);
+  background: var(--bggradient);
+  background-clip: text;
+  color: #35bcbf;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.aboutContext{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.4rem;
-    font-family: 'Nunito Sans', sans-serif;
-    display: flex;
-    padding: 20px 30px;
-    border: #91c6c6 solid 1px;
-    border-radius: 20px;
-    background-color: #41506b;
+.aboutContext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  padding: 20px 30px;
+  border: #91c6c6 solid 1px;
+  border-radius: 20px;
+  background-color: #41506b;
 }
-
 
 @media (width <=1250px) {
-    .aboutContext {
-        font-size: 1.3rem;
-        padding: 18px 27px;
-    }
+  .aboutContext {
+    font-size: 1.3rem;
+    padding: 18px 27px;
+  }
 }
 
 @media (width <=800px) {
-    .aboutContext {
-        font-size: 1.15rem;
-        padding: 16px 24px;
-    }
+  .aboutContext {
+    font-size: 1.15rem;
+    padding: 16px 24px;
+  }
 }
 
 @media (width <=650px) {
-    .aboutContext {
-        font-size: 1.05rem;
-        padding: 14px 21px;
-    }
+  .aboutContext {
+    font-size: 1.05rem;
+    padding: 14px 21px;
+  }
 }
 
 @media (width <=350px) {
-    .aboutContext {
-        font-size: 0.7rem;
-        padding: 6px 9px;
-    }
+  .aboutContext {
+    font-size: 0.7rem;
+    padding: 6px 9px;
+  }
 }
 
 @media (height <=900px) and (orientation: landscape) {
-    .aboutParent {
-        margin-top: 50px;
-    }
+  .aboutParent {
+    margin-top: 50px;
+  }
 }
 
 @media (height <=950px) and (orientation: portrait) {
-    .aboutParent {
-        margin-top: 150px;
-    }
+  .aboutParent {
+    margin-top: 150px;
+  }
 }

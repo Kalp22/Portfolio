@@ -1,17 +1,17 @@
-.projectParent{
-    padding: var(--defaultPadding);
-    padding-top: 150px;
-    padding-bottom: 150px;  
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-    background: var(--bgcolor2);
-    background: var(--bggradient2);
-    color: #edffff;
+.projectParent {
+  padding: var(--defaultPadding);
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  background: var(--bgcolor2);
+  background: var(--bggradient2);
+  color: #edffff;
 }
 
-.projectsCover{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.projectsCover {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }

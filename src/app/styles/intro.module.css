@@ -1,250 +1,246 @@
-.intro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    margin-top: 200px;
-}
-
-.hi{
-    font-size: 90px;
-}
-
-.iAmK{
-    font-size: 85px;
-    text-align: center;
-}
-
-.myTags{
-    margin-top: 20px;
-    font-size: 32px;
-    display: flex;
-    flex-direction: row;
-}
-
-.tags{
-    margin-right: 10px;
-}
-
-
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.4;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-@keyframes scale {
-    0% {
-        transform: scale(50%);
-    }
-
-    100% {
-        transform: scale(100%);
-    }
-}
-
-@keyframes appearFromLeft {
-    0% {
-        transform: translateX(-50px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes hiAnimation {
-    0% {
-        background-color: white;
-        color: white;
-        font-size: 15px;
-        margin-bottom: 65px;
-        padding: 5px;
-        border-radius: 100%;
-        transform: translateY(-250px);
-    }
-
-    25% {
-        background-color: white;
-        font-size: 15px;
-        padding: 5px;
-        margin-bottom: 65px;
-        border-radius: 100%;
-        transform: translateY(15px);
-    }
-
-    50% {
-        background-color: white;
-        font-size: 15px;
-        padding: 5px;
-        margin-bottom: 65px;
-        border-radius: 75%;
-        transform: translateY(-150px);
-    }
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 200px;
 }
 
 .hi {
-    animation: hiAnimation 1.5s ease-out;
+  font-size: 90px;
 }
 
 .iAmK {
-    animation: scale 1s 1.5s ease-out, opacity 2s 1.5s ease-out backwards;
+  font-size: 85px;
+  text-align: center;
+}
+
+.myTags {
+  margin-top: 20px;
+  font-size: 32px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tags {
+  margin-right: 10px;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(50%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@keyframes appearFromLeft {
+  0% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes hiAnimation {
+  0% {
+    background-color: white;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 65px;
+    padding: 5px;
+    border-radius: 100%;
+    transform: translateY(-250px);
+  }
+
+  25% {
+    background-color: white;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 65px;
+    border-radius: 100%;
+    transform: translateY(15px);
+  }
+
+  50% {
+    background-color: white;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 65px;
+    border-radius: 75%;
+    transform: translateY(-150px);
+  }
+}
+
+.hi {
+  animation: hiAnimation 1.5s ease-out;
+}
+
+.iAmK {
+  animation: scale 1s 1.5s ease-out, opacity 2s 1.5s ease-out backwards;
 }
 
 .tags:nth-child(1) {
-    opacity: 0;
-    animation: appearFromLeft 1s 2.5s ease-out, opacity 1s 2.5s ease-out forwards;
+  opacity: 0;
+  animation: appearFromLeft 1s 2.5s ease-out, opacity 1s 2.5s ease-out forwards;
 }
 
 .tags:nth-child(2) {
-    opacity: 0;
-    animation: appearFromLeft 1s 3.2s ease-out, opacity 1s 3.2s ease-out forwards;
+  opacity: 0;
+  animation: appearFromLeft 1s 3.2s ease-out, opacity 1s 3.2s ease-out forwards;
 }
 
 .tags:nth-child(3) {
-    opacity: 0;
-    animation: appearFromLeft 1s 3.9s ease-out, opacity 1s 3.9s ease-out forwards;
+  opacity: 0;
+  animation: appearFromLeft 1s 3.9s ease-out, opacity 1s 3.9s ease-out forwards;
 }
 
 .tags:nth-child(4) {
-    opacity: 0;
-    animation: appearFromLeft 1s 4.6s ease-out, opacity 1s 4.6s ease-out forwards;
+  opacity: 0;
+  animation: appearFromLeft 1s 4.6s ease-out, opacity 1s 4.6s ease-out forwards;
 }
 
-
 @media (width <=1000px) {
-    .kalpeshLogo {
-        width: 140px;
-    }
+  .kalpeshLogo {
+    width: 140px;
+  }
 
-    .hi {
-        font-size: 85px;
-    }
+  .hi {
+    font-size: 85px;
+  }
 
-    .iAmK {
-        font-size: 80px;
-    }
+  .iAmK {
+    font-size: 80px;
+  }
 
-    .myTags {
-        font-size: 29px;
-        margin-top: 5px;
-    }
+  .myTags {
+    font-size: 29px;
+    margin-top: 5px;
+  }
 
-    .tags {
-        margin-right: 9px;
-    }
+  .tags {
+    margin-right: 9px;
+  }
 }
 
 @media (width <= 800px) {
-    .hi {
-        font-size: 80px;
-    }
+  .hi {
+    font-size: 80px;
+  }
 
-    .iAmK {
-        font-size: 75px;
-    }
+  .iAmK {
+    font-size: 75px;
+  }
 
-    .myTags {
-        font-size: 27px;
-        margin-top: 0px;
-    }
+  .myTags {
+    font-size: 27px;
+    margin-top: 0px;
+  }
 
-    .tags {
-        margin-right: 8px;
-    }
+  .tags {
+    margin-right: 8px;
+  }
 }
 
 @media (width <= 650px) {
-    .hi {
-        font-size: 70px;
-    }
+  .hi {
+    font-size: 70px;
+  }
 
-    .iAmK {
-        font-size: 65px;
-    }
+  .iAmK {
+    font-size: 65px;
+  }
 
-    .myTags {
-        font-size: 23px;
-    }
+  .myTags {
+    font-size: 23px;
+  }
 
-    .tags {
-        margin-right: 7px;
-    }
+  .tags {
+    margin-right: 7px;
+  }
 }
 
 @media (width <=590px) {
-    .hi {
-        font-size: 60px;
-    }
+  .hi {
+    font-size: 60px;
+  }
 
-    .iAmK {
-        font-size: 55px;
-    }
+  .iAmK {
+    font-size: 55px;
+  }
 
-    .myTags {
-        font-size: 18px;
-    }
+  .myTags {
+    font-size: 18px;
+  }
 
-    .tags {
-        margin-right: 5px;
-    }
+  .tags {
+    margin-right: 5px;
+  }
 }
 
 @media (width <=500px) {
-    .hi {
-        font-size: 45px;
-    }
+  .hi {
+    font-size: 45px;
+  }
 
-    .iAmK {
-        font-size: 40px;
-    }
+  .iAmK {
+    font-size: 40px;
+  }
 
-    .myTags {
-        font-size: 13px;
-    }
+  .myTags {
+    font-size: 13px;
+  }
 
-    .tags {
-        margin-right: 3px;
-    }
+  .tags {
+    margin-right: 3px;
+  }
 }
 
 @media (width <=350px) {
-    .hi {
-        font-size: 40px;
-    }
-    
-    .iAmK {
-        font-size: 35px;
-    }
-    
-    .myTags {
-        font-size: 12px;
-    }
-    
-    .tags {
-        margin-right: 3px;
-    }
+  .hi {
+    font-size: 40px;
+  }
+
+  .iAmK {
+    font-size: 35px;
+  }
+
+  .myTags {
+    font-size: 12px;
+  }
+
+  .tags {
+    margin-right: 3px;
+  }
 }
 
 @media (height <=900px) and (orientation: landscape) {
-    .intro {
-        margin-top: 50px;
-    }
+  .intro {
+    margin-top: 50px;
+  }
 }
 
 @media (height <=950px) and (orientation: portrait) {
-    .intro {
-        margin-top: 250px;
-        margin-bottom: 450px;
-    }
-
+  .intro {
+    margin-top: 250px;
+    margin-bottom: 450px;
+  }
 }
