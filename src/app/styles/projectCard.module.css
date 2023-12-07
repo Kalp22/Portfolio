@@ -61,6 +61,7 @@
 .projectDescription {
   padding: 25px;
   color: #c4d7d7;
+  width: 67%;
 }
 
 .projectDescript {
@@ -100,23 +101,6 @@
 }
 
 @media (width <= 750px) {
-  .pLink {
-    margin: 0px 5px;
-    padding: 7px 10px;
-    font-size: 15px;
-  }
-  .projectDescription {
-    font-size: 15px;
-    align-self: center;
-    padding: 15px;
-  }
-  .projectHeads {
-    margin-bottom: 10px;
-    padding: 10px 12px;
-  }
-}
-
-@media (width <= 650px) {
   .projectParent {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -163,7 +147,6 @@
   }
   .projectDescript {
     font-size: 15px;
-    /* margin-top: 10px; */
   }
   .theProjects {
     padding: 10px 5px;
