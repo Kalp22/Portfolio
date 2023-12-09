@@ -222,7 +222,7 @@
   }
 
   .myResponsiveTags {
-    color: rgba(255, 255, 255, 0.850);
+    color: rgba(255, 255, 255, 0.85);
     display: flex;
     flex-direction: column;
     margin: 10px 2px;
@@ -255,7 +255,7 @@
   }
 }
 
-@media (width <=350px) {
+@media (width <=390px) {
   .hi {
     font-size: 40px;
   }
@@ -282,5 +282,10 @@
   .intro {
     margin: 150px 0px 250px 50px;
     align-items: start;
+  }
+}
+@media (width <=400px) and (orientation: portrait) {
+  .intro {
+    margin: 150px 0px 250px 20px;
   }
 }
