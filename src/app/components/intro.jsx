@@ -56,6 +56,19 @@ export default function Intro() {
             </div>
           ))}
       </div>
+      <div className={[styles.myResponsiveTags, "unselectable"].join(" ")}>
+        {tags &&
+          tags.map((data, i) => (
+            <div className={styles.responsiveTags} key={i}>
+              <div className={styles.eachResponsiveTag}>I am a {data.tag}</div>
+              {tags.length == i + 1 ? (
+                <div></div>
+              ) : (
+                <div className={styles.underline}></div>
+              )}
+            </div>
+          ))}
+      </div>
       <ToastContainer />
     </div>
   );

@@ -13,6 +13,7 @@ import { BsGithub } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BiLogoTailwindCss } from "react-icons/bi";
+import { SiCplusplus } from "react-icons/si";
 
 export default function Technologies() {
   return (
@@ -90,13 +91,7 @@ export default function Technologies() {
 
         <div className={styles.logos}>
           <div className={styles.logoImages}>
-            <Image
-              src={"C++.svg"}
-              alt="C++"
-              className={styles.logoIcons}
-              width={"70"}
-              height={"70"}
-            />
+            <SiCplusplus className={styles.logoIcons} size={"70px"} />
           </div>
           <div className={styles.logoText}>C++</div>
         </div>

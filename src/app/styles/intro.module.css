@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  margin-top: 200px;
+  margin-top: 250px;
 }
 
 .hi {
@@ -118,6 +118,16 @@
   animation: appearFromLeft 1s 4.6s ease-out, opacity 1s 4.6s ease-out forwards;
 }
 
+.myResponsiveTags {
+  display: none;
+}
+
+.underline {
+  width: 50%;
+  border: 1px solid #ffffff10;
+  margin: 5px 0px;
+}
+
 @media (width <=1000px) {
   .kalpeshLogo {
     width: 140px;
@@ -203,14 +213,45 @@
 
   .iAmK {
     font-size: 40px;
+    animation: appearFromLeft 1s 1.5s ease-out,
+      opacity 2s 1.5s ease-out backwards;
   }
 
   .myTags {
-    font-size: 13px;
+    display: none;
   }
 
-  .tags {
-    margin-right: 3px;
+  .myResponsiveTags {
+    color: rgba(255, 255, 255, 0.850);
+    display: flex;
+    flex-direction: column;
+    margin: 10px 2px;
+    font-size: 20px;
+    align-items: stretch;
+  }
+
+  .responsiveTags:nth-child(1) {
+    opacity: 0;
+    animation: appearFromLeft 1s 2.5s ease-out,
+      opacity 1s 2.5s ease-out forwards;
+  }
+
+  .responsiveTags:nth-child(2) {
+    opacity: 0;
+    animation: appearFromLeft 1s 3.2s ease-out,
+      opacity 1s 3.2s ease-out forwards;
+  }
+
+  .responsiveTags:nth-child(3) {
+    opacity: 0;
+    animation: appearFromLeft 1s 3.9s ease-out,
+      opacity 1s 3.9s ease-out forwards;
+  }
+
+  .responsiveTags:nth-child(4) {
+    opacity: 0;
+    animation: appearFromLeft 1s 4.6s ease-out,
+      opacity 1s 4.6s ease-out forwards;
   }
 }
 
@@ -221,14 +262,6 @@
 
   .iAmK {
     font-size: 35px;
-  }
-
-  .myTags {
-    font-size: 12px;
-  }
-
-  .tags {
-    margin-right: 3px;
   }
 }
 
@@ -242,5 +275,12 @@
   .intro {
     margin-top: 250px;
     margin-bottom: 450px;
+  }
+}
+
+@media (width <=500px) and (orientation: portrait) {
+  .intro {
+    margin: 150px 0px 250px 50px;
+    align-items: start;
   }
 }
