@@ -36,7 +36,7 @@
   margin: 0px 30px;
   background-color: #b2cccc;
   border-radius: 10px;
-  transition-duration: 100ms;
+  transition: all 0.3s ease-in-out;
   padding: 15px;
   text-align: center;
 }
@@ -130,10 +130,10 @@
     padding: 20px 10px;
   }
   .theProjects:nth-child(odd) {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .theProjects:nth-child(even) {
-    margin-right: 20px;
+    margin-right: 0px;
   }
 }
 
@@ -150,11 +150,5 @@
   }
   .theProjects {
     padding: 10px 5px;
-  }
-  .theProjects:nth-child(odd) {
-    margin-left: 0px;
-  }
-  .theProjects:nth-child(even) {
-    margin-right: 0px;
   }
 }
