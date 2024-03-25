@@ -12,11 +12,11 @@ mongoose.connect(process.env.DB_ADD_HOMEPAGE);
 
 router.get("/", async (req, res) => {
   try {
-    const tagsData = await subTitleSchema.find();
+    const tagsData = await subTitleSchema.find().exec();
 
-    const aboutParasData = await aboutSchema.find();
+    const aboutParasData = await aboutSchema.find().exec();
 
-    const projectData = await projectsSchema.find();
+    const projectData = await projectsSchema.find().sort({ _id: -1 }).exec();
 
     res.status(200).json({
       status: true,
