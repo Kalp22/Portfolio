@@ -1,46 +1,6 @@
-"use client";
-import React, { useEffect } from "react";
 import styles from "../styles/intro.module.css";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
-export default function Intro() {
-  const [tags, setTags] = React.useState([]);
-
-  useEffect(() => {
-    const getData = async () => {
-      fetch("https://kalpesh-portfolio-backend.vercel.app/", {
-        method: "GET",
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.status) {
-            setTags(data.tags);
-          } else {
-            toast.error("Error in fetching data", {
-              position: "top-center",
-              autoClose: 5000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-            });
-          }
-        })
-        .catch((err) => {
-          toast.error("Server Error", {
-            position: "top-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-          });
-        });
-    };
-    getData();
-  }, []);
-
+export default function Intro({ tags }) {
   return (
     <div className={styles.intro}>
       <div className={[styles.hi, "unselectable"].join(" ")}>Hi,</div>
@@ -69,7 +29,6 @@ export default function Intro() {
             </div>
           ))}
       </div>
-      <ToastContainer />
     </div>
   );
 }
