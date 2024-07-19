@@ -8,12 +8,13 @@ import { FaGitAlt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiMongodb } from "react-icons/si";
+import { SiDjango, SiMongodb } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { SiCplusplus } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 
 export default function Technologies() {
   return (
@@ -120,6 +121,18 @@ export default function Technologies() {
             <BiLogoTailwindCss className={styles.logoIcons} size={"70px"} />
           </div>
           <div className={styles.logoText}>Tailwind CSS</div>
+        </div>
+        <div className={styles.logos}>
+          <div className={styles.logoImages}>
+            <SiTypescript className={styles.logoIcons} size={"70px"} />
+          </div>
+          <div className={styles.logoText}>Typescript</div>
+        </div>
+        <div className={styles.logos}>
+          <div className={styles.logoImages}>
+            <SiDjango className={styles.logoIcons} size={"70px"} />
+          </div>
+          <div className={styles.logoText}>Django</div>
         </div>
       </div>
     </div>
